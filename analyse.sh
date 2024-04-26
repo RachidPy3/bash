@@ -17,7 +17,7 @@ ip=$(hostname -I)
 mac=$(ip link show | grep "ether" | awk '{print $2}')
 cmds=$(journalctl _COMM=sudo | grep COMMAND | wc -l)
 wall "
-    #Architecture: $arc
+    	#Architecture: $arc
 	#CPU physical: $pcpu
 	#vCPU: $vcpu
 	#Memory Usage: $uram/${fram}MB ($pram%)
